@@ -9,7 +9,11 @@
 3. Clic en Open Editor
   <img src="https://i.imgur.com/SaojjSH.png"/>
 4. Copiar y Pegar el contenido de index.html en la pestaña HTML.
+   
 5. Copiar y Pegar el contenido de style.css en la pestaña CSS.
+   
 6. Copiar y Pegar el contenido de script.js en la pestaña JS.
+   
 7. Copiar y pegar el contenido de Fields.json en FIELDS.
+    
 8. Listo, probar y configurar al gusto.
