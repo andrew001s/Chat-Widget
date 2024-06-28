@@ -1,0 +1,112 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css');
+@import url('https://fonts.googleapis.com/css?family={{fontName}}');
+
+* {
+    font-family: '{{fontName}}', sans-serif;
+    color: {{fontColor}};
+    overflow: hidden;
+    font-weight: {{fontWeight}};
+    text-shadow:{textShadow};
+  	text-align: left;
+  	scroll-behavior: smooth;
+  	background-color: {{globalbackgroundColor}};
+
+}
+.message{
+  margin-top:-50px;
+}
+.user-box{
+  	position: absolute;
+  	background-color: {{userbackgroundColor}};
+  	border-radius: 20px;
+    font-size:{{fontSize}}px;
+  	z-index: 909;
+	top: -1%;
+  	padding: 5px;
+  	margin-top: auto;
+    left: {{sliderNickname}}%;
+  	font-weight: 600;
+  	text-align: left;
+ 
+}
+
+.user-box > span{
+    font-size:25px;
+  	font-weight: 600;
+  	text-align: left;
+}
+
+.main-container{
+  position: relative;
+    display:{{alignMessages}};
+    height:100%;
+    flex-direction: column;
+    justify-content: flex-end;
+  	text-align: left;
+
+}
+
+.message-row{
+
+    position:relative;
+  	flex: 0 0 auto;
+    width:90%;
+  	height: auto;
+    vertical-align: baseline;
+  	margin-right: 10px;
+  	margin-bottom: 10px;
+  	border-radius: 10px;
+  	padding-top: 37px;
+  	padding-right: 37px;
+  	text-align: left;
+}
+
+.badge{
+  display:{{badgesVisibility}};
+  height:{{fontSize}}px;
+  padding-top: 10px;	
+  padding-left: 3px;	
+}
+
+.fa-icon{
+	font-size:{{inconSize}}px;
+  	/*top:{{sliderTopIcon}}px;*/
+  	left: {{sliderIcon}}px;
+  	z-index:100;
+    text-shadow: 0px 0px 6px {{PimaryIconShadow}};
+  position: relative;
+
+}
+.user-message{
+    font-size:{{fontSize}}px;
+  	background-color: {{messagebackgroundColor}};
+  	border-radius: 10px;
+  	height: auto;
+ 	left: {{sliderMessage}}%;
+  	display:inline-block;
+  	padding-top: 10px;
+  	top: 5.5%;
+  	width:85%;
+  	position: relative;
+}
+
+.fa-icon-secondary{
+  font-size:{{inconSize}}px;
+  position: absolute;
+  top:{{sliderTopIconSecondary}}px;
+  /*top:{{sliderTopIconSecondary}}%;*/
+  left: {{sliderIconSecondary}}%;
+  z-index:1000;
+  transform: rotate({{sliderRotateIconSecondary}}deg);
+  text-shadow: 2px 2px 10px {{SecondaryIconShadow}}; /* Sombra del contenedor */
+
+}
+.emote{
+    height: {emoteSize}px;
+    vertical-align: middle;
+    background-repeat:no-repeat;
+}
+
+.action{
+    font-style: italic;
+}

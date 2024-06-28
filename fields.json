@@ -1,0 +1,431 @@
+{ 	
+  "globalbackgroundColor":{
+  	"type": "colorpicker",
+    "label": "Global Background Color",
+    "value": "rgba(56, 56, 56, 0)",
+    "group": "Typography"
+  },
+"SecondaryIconShadow":{
+  	"type": "colorpicker",
+    "label": "Secondary Icon Shadow Color",
+    "value": "rgb(90, 12, 12)",
+    "group": "Typography"
+  },
+  "PimaryIconShadow":{
+  	"type": "colorpicker",
+    "label": "Primary Icon Shadow Color",
+    "value": "rgb(0, 0, 0)",
+    "group": "Typography"
+  },
+  "fontName": {
+    "type": "text",
+    "label": "Font name",
+    "value": "Fredoka",
+    "group": "Typography"
+  },
+  "fontSize": {
+    "type": "number",
+    "label": "Font size",
+    "value": 48,
+    "group": "Typography"
+  },
+  "inconSize": {
+    "type": "number",
+    "label": "Icon size",
+    "value": 60,
+    "group": "Typography"
+  },
+  "fontWeight": {
+    "label": "Font Weight",
+    "type": "dropdown",
+    "value": "700",
+    "options": {
+      "100": "Thin (100)",
+      "300": "Light (300)",
+      "400": "Regular (400)",
+      "500": "Medium (500)",
+      "700": "Bold (700)",
+      "900": "Black (900)"
+    },
+    "group": "Typography"
+  },
+  "fontColor": {
+    "type": "colorpicker",
+    "label": "Font Color",
+    "value": "rgba(255,255,255,1)",
+    "group": "Typography"
+  },
+  
+  
+    "messagebackgroundColor": {
+    "type": "colorpicker",
+    "label": "Message Background Color",
+    "value": "rgba(39, 39, 39, 0.87)",
+    "group": "Typography"
+  },
+  
+  "textShadow": {
+    "type": "text",
+    "label": "Text shadow",
+    "value": "rgb(0, 0, 0) 1px 1px 1px",
+    "group": "Typography"
+  },
+  "emoteSize": {
+    "type": "number",
+    "label": "Emote size",
+    "value": 24,
+    "group": "Typography"
+  },
+  "alignMessages": {
+    "label": "Align Messages",
+    "type": "dropdown",
+    "value": "flex",
+    "options": {
+      "flex": "Bottom",
+      "block": "Top"
+    },
+    "group": "Typography"
+  },
+  "nickColor": {
+    "type": "dropdown",
+    "label": "Nickname color:",
+    "value": "user",
+    "options": {
+      "user": "same as twitch",
+      "messagecolor": "same as message text",
+      "custom": "other (choose below)"
+    },
+    "group": "Typography"
+  },
+  "customNickColor": {
+    "type": "colorpicker",
+    "label": "Nickname color:",
+    "value": "rgba(0,255,0,1)",
+    "group": "Typography"
+  },
+  
+    "userbackgroundColor": {
+    "type": "colorpicker",
+    "label": "Nickname Background Color",
+    "value": "rgba(61, 6, 6, 0.81)",
+    "group": "Typography"
+  },
+  
+  "messagesLimit": {
+    "type": "number",
+    "label": "Messages limit",
+    "value": 5,
+    "group": "Settings"
+  },
+  "hideAfter": {
+    "type": "number",
+    "label": "Hide after seconds (999 to disable)",
+    "value": 999,
+    "group": "Settings"
+  },
+  "hideCommands": {
+    "label": "Hide messages with ! (commands)",
+    "type": "dropdown",
+    "value": "yes",
+    "options": {
+      "yes": "Yes",
+      "no": "No"
+    },
+    "group": "Settings"
+  },
+  
+    "badgesVisibility": {
+    "label": "Show Badges?",
+    "type": "dropdown",    
+    "value": "Yes",
+    "options": {
+    "inline": "Yes",
+    "none": "No"      
+	      },
+    "group": "Settings"
+      
+    },
+  
+  "ignoredUsers": {
+    "label": "Ignored users (comma separated)",
+    "type": "text",
+    "value": "StreamElements,OtherBot",
+    "group": "Settings"
+  },
+  
+    "sliderNickname": {
+    "label": "Horizontal nickname position",
+    "type": "slider",
+    "value": "27",
+    "max": 50,
+    "min": 0,
+    "step": 1,
+    "value": 0,  
+    "group": "Settings"
+  }, "sliderMessage": {
+    "label": "Horizontal message position",
+    "type": "slider",
+    "value": "14",
+    "max": 25,
+    "min": 0,
+    "step": 1,
+    "value": 0,  
+    "group": "Settings"
+  },
+  "sliderIcon": {
+    "label": "Horizontal icon position",
+    "type": "slider",
+    "value": "11",
+    "max": 25,
+    "min": 0,
+    "step": 1,
+    "value": 0,  
+    "group": "Settings"
+  },"sliderIconSecondary": {
+    "label": "Horizontal Secondary icon position",
+    "type": "slider",
+    "value": "87",
+    "max": 100,
+    "min": 0,
+    "step": 1,
+    "value": 0,  
+    "group": "Settings"
+  },
+  "sliderTopIcon": {
+    "label": "Vertical icon position",
+    "type": "slider",
+    "value": "37.5",
+    "max": 80,
+    "min": 0,
+    "step": 0.1,
+    "value": 0,  
+    "group": "Settings"
+  },"sliderTopIconSecondary": {
+    "label": "Vertical Secondary icon position",
+    "type": "slider",
+    "value": "80",
+    "max": 80,
+    "min": 0,
+    "step": 0.1,
+    "value": 0,  
+    "group": "Settings"
+  },"sliderRotateIconSecondary": {
+    "label": "Rotation Secondary icon",
+    "type": "slider",
+    "value": "34",
+    "max": 360,
+    "min": 0,
+    "step": 1,
+    "value": 0,  
+    "group": "Settings"
+  },
+    "outlineColor": {
+    "type": "colorpicker",
+    "label": "Outline Color:",
+    "value": "rgb(149, 132, 132)",
+    "group": "Settings"
+  },
+  
+  "animationIn": {
+    "type": "dropdown",
+    "label": "Animation In:",
+    "value": "bounceInUp",
+    "options": {
+      "none": "None",
+      "bounceIn": "bounceIn",
+      "bounceInDown": "bounceInDown",
+      "bounceInLeft": "bounceInLeft",
+      "bounceInRight": "bounceInRight",
+      "bounceInUp": "bounceInUp",
+      "fadeIn": "fadeIn",
+      "fadeInDown": "fadeInDown",
+      "fadeInDownBig": "fadeInDownBig",
+      "fadeInLeft": "fadeInLeft",
+      "fadeInLeftBig": "fadeInLeftBig",
+      "fadeInRight": "fadeInRight",
+      "fadeInRightBig": "fadeInRightBig",
+      "fadeInUp": "fadeInUp",
+      "fadeInUpBig": "fadeInUpBig",
+      "flipInX": "flipInX",
+      "flipInY": "flipInY",
+      "lightSpeedIn": "lightSpeedIn",
+      "rotateIn": "rotateIn",
+      "rotateInDownLeft": "rotateInDownLeft",
+      "rotateInDownRight": "rotateInDownRight",
+      "rotateInUpLeft": "rotateInUpLeft",
+      "rotateInUpRight": "rotateInUpRight",
+      "slideInUp": "slideInUp",
+      "slideInDown": "slideInDown",
+      "slideInLeft": "slideInLeft",
+      "slideInRight": "slideInRight",
+      "zoomIn": "zoomIn",
+      "zoomInDown": "zoomInDown",
+      "zoomInLeft": "zoomInLeft",
+      "zoomInRight": "zoomInRight",
+      "zoomInUp": "zoomInUp",
+      "jackInTheBox": "jackInTheBox",
+      "rollIn": "rollIn"
+    },
+    "group": "Settings"
+  },
+  "iconanimationIn": {
+    "type": "dropdown",
+    "label": "Primary Icon Animation In:",
+    "value": "none",
+    "options": {
+      "none": "None",
+      "bounceIn": "bounceIn",
+      "bounceInDown": "bounceInDown",
+      "bounceInLeft": "bounceInLeft",
+      "bounceInRight": "bounceInRight",
+      "bounceInUp": "bounceInUp",
+      "fadeIn": "fadeIn",
+      "fadeInDown": "fadeInDown",
+      "fadeInDownBig": "fadeInDownBig",
+      "fadeInLeft": "fadeInLeft",
+      "fadeInLeftBig": "fadeInLeftBig",
+      "fadeInRight": "fadeInRight",
+      "fadeInRightBig": "fadeInRightBig",
+      "fadeInUp": "fadeInUp",
+      "fadeInUpBig": "fadeInUpBig",
+      "flipInX": "flipInX",
+      "flipInY": "flipInY",
+      "lightSpeedIn": "lightSpeedIn",
+      "rotateIn": "rotateIn",
+      "rotateInDownLeft": "rotateInDownLeft",
+      "rotateInDownRight": "rotateInDownRight",
+      "rotateInUpLeft": "rotateInUpLeft",
+      "rotateInUpRight": "rotateInUpRight",
+      "slideInUp": "slideInUp",
+      "slideInDown": "slideInDown",
+      "slideInLeft": "slideInLeft",
+      "slideInRight": "slideInRight",
+      "zoomIn": "zoomIn",
+      "zoomInDown": "zoomInDown",
+      "zoomInLeft": "zoomInLeft",
+      "zoomInRight": "zoomInRight",
+      "zoomInUp": "zoomInUp",
+      "jackInTheBox": "jackInTheBox",
+      "rollIn": "rollIn"
+    },
+    "group": "Settings"
+  },"iconSanimationIn": {
+    "type": "dropdown",
+    "label": "Icon Secondary Animation In:",
+    "value": "none",
+    "options": {
+      "none": "None",
+      "bounceIn": "bounceIn",
+      "bounceInDown": "bounceInDown",
+      "bounceInLeft": "bounceInLeft",
+      "bounceInRight": "bounceInRight",
+      "bounceInUp": "bounceInUp",
+      "fadeIn": "fadeIn",
+      "fadeInDown": "fadeInDown",
+      "fadeInDownBig": "fadeInDownBig",
+      "fadeInLeft": "fadeInLeft",
+      "fadeInLeftBig": "fadeInLeftBig",
+      "fadeInRight": "fadeInRight",
+      "fadeInRightBig": "fadeInRightBig",
+      "fadeInUp": "fadeInUp",
+      "fadeInUpBig": "fadeInUpBig",
+      "flipInX": "flipInX",
+      "flipInY": "flipInY",
+      "lightSpeedIn": "lightSpeedIn",
+      "rotateIn": "rotateIn",
+      "rotateInDownLeft": "rotateInDownLeft",
+      "rotateInDownRight": "rotateInDownRight",
+      "rotateInUpLeft": "rotateInUpLeft",
+      "rotateInUpRight": "rotateInUpRight",
+      "slideInUp": "slideInUp",
+      "slideInDown": "slideInDown",
+      "slideInLeft": "slideInLeft",
+      "slideInRight": "slideInRight",
+      "zoomIn": "zoomIn",
+      "zoomInDown": "zoomInDown",
+      "zoomInLeft": "zoomInLeft",
+      "zoomInRight": "zoomInRight",
+      "zoomInUp": "zoomInUp",
+      "jackInTheBox": "jackInTheBox",
+      "rollIn": "rollIn"
+    },
+    "group": "Settings"
+  },
+  "animationOut": {
+    "type": "dropdown",
+    "label": "Animation Out:",
+    "value": "none",
+    "options": {
+      "none": "None",
+      "bounceOut": "bounceOut",
+      "bounceOutDown": "bounceOutDown",
+      "bounceOutLeft": "bounceOutLeft",
+      "bounceOutRight": "bounceOutRight",
+      "bounceOutUp": "bounceOutUp",
+      "fadeOut": "fadeOut",
+      "fadeOutDown": "fadeOutDown",
+      "fadeOutDownBig": "fadeOutDownBig",
+      "fadeOutLeft": "fadeOutLeft",
+      "fadeOutLeftBig": "fadeOutLeftBig",
+      "fadeOutRight": "fadeOutRight",
+      "fadeOutRightBig": "fadeOutRightBig",
+      "fadeOutUp": "fadeOutUp",
+      "fadeOutUpBig": "fadeOutUpBig",
+      "flipOutX": "flipOutX",
+      "flipOutY": "flipOutY",
+      "lightSpeedOut": "lightSpeedOut",
+      "rotateOut": "rotateOut",
+      "rotateOutDownLeft": "rotateOutDownLeft",
+      "rotateOutDownRight": "rotateOutDownRight",
+      "rotateOutUpLeft": "rotateOutUpLeft",
+      "rotateOutUpRight": "rotateOutUpRight",
+      "slideOutUp": "slideOutUp",
+      "slideOutDown": "slideOutDown",
+      "slideOutLeft": "slideOutLeft",
+      "slideOutRight": "slideOutRight",
+      "zoomOut": "zoomOut",
+      "zoomOutDown": "zoomOutDown",
+      "zoomOutLeft": "zoomOutLeft",
+      "zoomOutRight": "zoomOutRight",
+      "zoomOutUp": "zoomOutUp",
+      "rollOut": "rollOut"
+    },
+    "group": "Settings"
+  },
+	"iconanimation": {
+    "type": "dropdown",
+    "label": "Primary Icon Animation repeat:",
+    "value": "beat",
+    "options": {
+      "none": "None",
+      "beat":"beat",
+      "beat-fade":"beat-fade",
+      "fade":"fade",
+      "flip":"flip",
+      "spin":"spin",
+      "spin-pulse":"spin-pulse"
+    },
+    "group": "Settings"
+  },
+  "iconSanimation": {
+    "type": "dropdown",
+    "label": "Secodary Icon Animation repeat:",
+    "value": "fade",
+    "options": {
+      "none": "None",
+      "beat":"beat",
+      "beat-fade":"beat-fade",
+      "fade":"fade",
+      "flip":"flip",
+      "spin":"spin",
+      "spin-pulse":"spin-pulse"
+    },
+    "group": "Settings"
+  },
+  "testMessage": {
+    "type": "button",
+    "label": "Test message",
+    "value": "Test message",
+    "group": "Other"
+  }
+}
