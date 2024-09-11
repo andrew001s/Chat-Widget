@@ -15,19 +15,23 @@
 .message{
   margin-top:-50px;
 }
+.user-box-container {
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start; 
+    width: 100%;
+    margin: 0; 
+  	gap:5px;
+    padding: 10px;
+}
+
 .user-box{
-  	position: absolute;
   	background-color: {{userbackgroundColor}};
   	border-radius: 20px;
     font-size:{{fontSize}}px;
-  	z-index: 909;
-	top: -1%;
-  	padding: 5px;
-  	margin-top: auto;
-    left: {{sliderNickname}}%;
+  	padding:10px;
   	font-weight: 600;
   	text-align: left;
- 
 }
 
 .user-box > span{
@@ -37,7 +41,7 @@
 }
 
 .main-container{
-  position: relative;
+  	position: relative;
     display:{{alignMessages}};
     height:100%;
     flex-direction: column;
@@ -47,10 +51,8 @@
 }
 
 .message-row{
-
-    position:relative;
   	flex: 0 0 auto;
-    width:90%;
+    width:100%;
   	height: auto;
     vertical-align: baseline;
   	margin-right: 10px;
@@ -70,12 +72,16 @@
 
 .fa-icon{
 	font-size:{{inconSize}}px;
-  	/*top:{{sliderTopIcon}}px;*/
+  	top:{{sliderTopIcon}}px;
   	left: {{sliderIcon}}px;
-  	z-index:100;
     text-shadow: 0px 0px 6px {{PimaryIconShadow}};
-  position: relative;
+}
 
+.fa-icon-message{
+  	position:relative;
+	font-size:{{inconSize}}px;
+  	left:5px;
+    text-shadow: 0px 0px 6px {{PimaryIconShadow}};
 }
 .user-message{
     font-size:{{fontSize}}px;
@@ -84,7 +90,7 @@
   	height: auto;
  	left: {{sliderMessage}}%;
   	display:inline-block;
-  	padding-top: 10px;
+    padding: 10px;
   	top: 5.5%;
   	width:85%;
   	position: relative;
