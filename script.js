@@ -171,18 +171,21 @@ function addMessage(username, badges, message, isAction, uid, msgId) {
         actionClass = "action";
     }
     const element = $.parseHTML(`
-    <div data-sender="${uid}" data-msgid="${msgId}" class="message-row {animationIn} animated" id="msg-${totalMessages}">
-        <div style="position: relative">${badges}
-			<i class="fa-solid fa-horse-head fa-icon"></i>
-			<div class="user-box ${actionClass}">${username}</div> 
-			
-		</div>
-		<i class="fa-solid fa-skull fa-icon {iconanimationIn} animated fa-{iconanimation} "></i>
-		<div class="message">
-          <div class="user-message ${actionClass}">${message}</div>
-          <i class="fa-solid fa-bone fa-icon-secondary {iconSanimationIn} animated  fa-{iconSanimation}"></i>
-		</div>
-    </div>`);
+        <div data-sender="${uid}" data-msgid="${msgId}" class="message-row {animationIn} animated" id="msg-${totalMessages}">
+            <div class="user-box-container" style="position: relative; display: flex; align-items: center; justify-content: flex-start;">
+                ${badges}
+                <i class="fa-solid fa-horse-head fa-icon"></i>
+                <div class="user-box ${actionClass}">${username}</div> 
+            </div>
+            <i class="fa-solid fa-cross fa-icon-message  {iconanimationIn} animated fa-{iconanimation}"></i>
+            <div class="message">
+                <div class="user-message ${actionClass}">${message}</div>
+                <i class="fa-solid fa-bone fa-icon-secondary {iconSanimationIn} animated fa-{iconSanimation}"></i>
+            </div>
+        </div>
+    `);
+
+
     if (addition === "append") {
         if (hideAfter !== 999) {
             $(element).appendTo('.main-container').delay(hideAfter * 1000).queue(function () {
